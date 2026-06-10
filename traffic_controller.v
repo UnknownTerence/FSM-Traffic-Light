@@ -19,7 +19,7 @@ module traffic_controller (
 		endcase
 	end
 
-	// 4-bit clock (16s max) | reset and clk
+	// 4-bit clock (for simulation) | reset and clk
 	always @(posedge clk) begin
 		if (reset) begin
 			state <= red;
